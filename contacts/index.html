@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bonifest Bar & Restaurant</title>
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html" id="logo"><br>Bonifest<br><span class="desc">Bar & Restaurant.</span></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+                <ul class="nav navbar-nav pull-right">
+                    <li ><a href="../">Home</a>
+                    </li>
+                    <!--<li><a href="index.html">Food + Drinks</a>-->
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown">Food + Drinks</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="beakfast-menu">Breakfast Menu</a></li>
+                            <li><a href="lunch-menu">Lunch Menu</a></li>
+                            <li><a href="drinks-menu">Drinks Menu</a></li>
+                        </ul>
+                    </li>
+
+                    <!--<li><a href="menu.html">Menu</a></li>-->
+                    <li><a href="../gallery/">Gallery</a></li>
+                    <li class="active-link"><a href="../contacts">Contact Us</a>
+                    </li>
+                    <li><a href="../about/">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <h2 class="intro-text text-center">Contact <strong>business casual</strong>
+                    </h2>
+
+                </div>
+                <div class="col-md-8">
+
+                    <div style='overflow:hidden;height:400px;width:100%;'>
+                        <div id='gmap_canvas' style='height:400px;width:100%;'></div>
+                        <style>
+                            #gmap_canvas img{
+                                max-width:none!important;
+                                background:none!important
+                            }
+
+                            #gmap_canvas{
+                                border: 1px solid rgba(255,255,255,0.4);
+                            }
+                        </style>
+                    </div>
+                    <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
+                    <!--<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=0.3476,32.5825&amp;spn=0.3476,32.5825&amp;t=m&amp;z=4&amp;output=embed"></iframe>-->
+                </div>
+                <div class="col-md-4">
+                    <p>Phone: <strong>256784275529</strong>
+                    </p>
+                    <p>Email: <strong>info@bonibar.com</strong>
+                    </p>
+                    <p>Address: <strong>The Plaza<br>5483 People's Ave.<br>Beverley Hills, China.</strong>
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="row box">
+                <div class="col-lg-12">
+                    <h2 class="intro-text text-center">Contact <strong>form</strong>
+                    </h2>
+                    <form role="form">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label>Name</label>
+                                <input type="text" class="">
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label>Email Address</label>
+                                <input type="email" class="">
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label>Phone Number</label>
+                                <input type="tel" class="">
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="form-group col-lg-12">
+                                <label>Message</label>
+                                <textarea class=""></textarea>
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <!--<input type="hidden" name="save" value="contact">-->
+                                <button type="submit" class="">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                </div>
+                <div class="col-sm-4">
+                    &copy; 2016 Bonifest Bar & Restaurant. All Rights Reserved.
+                </div>
+
+                <div class="col-sm-4 text-center">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/jquery-1.10.2.js"></script>
+    <script src="../js/bootstrap.js"></script>
+
+
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDNrZgPb2IAWxWCxPxMX0Iie7un0MVZU-o'>
+
+</script>
+<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=9fa93556a3d0690b5ca625f25452ac750ea0e86f'></script>
+<script type='text/javascript'>
+    function init_map(){
+    var myOptions = {
+        zoom:15,
+        center:new google.maps.LatLng(0.3156,32.56560000000002),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+    marker = new google.maps.Marker({
+        title: 'Bonifest Bar and Restaurant.',
+        map: map,
+        position: new google.maps.LatLng(0.3156,32.56560000000002)
+    });
+
+    infowindow = new google.maps.InfoWindow({
+        content:'<strong>Bonifest Bar and Restaurant, Kampala</strong>'
+    });
+
+    marker.addListener('click', function() {
+        infowindow.open(map, marker);
+    });
+}
+google.maps.event.addDomListener(window, 'load', init_map);
+</script>
+
+</body>
+
+</html>
